@@ -46,7 +46,6 @@ function procAPI(x, response, request) {
   if (q.mode === "sendMsg") {
     function iptest(){
         return request.headers['x-forwarded-for'];
-	
     /*? request.headers['x-forwarded-for']
     : (request.connection && request.connection.remoteAddress)
     ? request.connection.remoteAddress
